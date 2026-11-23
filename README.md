@@ -132,6 +132,13 @@ bein fits any problem where **the hard part is coming up with something better t
 - **The real-gap rate needs time.** Ledger rechecks come due 6 months after an idea is logged.
 - **A run is heavy.** Several subagents and web searches take minutes, not seconds. Use it for decisions that deserve it.
 
+## What bein runs, sends and fetches
+
+- **Runs:** three readable Python scripts in `skills/bein/scripts/` (standard library only, plus the optional `typesafe-sdk`). No hooks, no MCP servers, no background processes.
+- **Fetches:** web searches made by your agent's own search tool (world scan, prior-art check, ledger rechecks).
+- **Sends:** only if you add a TypeSafe key, `jev_judge.py` sends idea texts (one-line candidate ideas and known ideas) to the TypeSafe API, with your key, after you approve the call count. Nothing else leaves your machine.
+- **Stores:** `~/.bein/discarded.md`, `~/.bein/ledger.json` and your optional `~/.bein/.env`, all on your machine. No telemetry.
+
 ## Files
 
 ```
