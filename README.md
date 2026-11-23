@@ -23,6 +23,28 @@ Ask any AI for "innovative ideas" and you get the same ten ideas everyone gets. 
 
 bein turns that around. It first **measures** what the model would say by default, then searches for ideas **away** from those answers, and only then checks whether the new ideas are coherent, feasible and actually new.
 
+## Before / after
+
+Two real runs. On the left, what a fresh Claude agent says when asked plainly. On the right, what bein returned for the same ask, with its own prior-art verdict.
+
+**"People stop using their notes app because old notes become a pile they never look at."**
+
+| Claude usually says | bein returned |
+|---|---|
+| Weekly digest of related old notes | **Old notes come back to be changed, not read.** One old note at a time opens in edit mode and can't be put back until you change it. *No prior art found.* |
+| Related notes in a sidebar while you type | **Your old note objects when you contradict it.** Write a claim that disagrees with an old note, and the old note asks "which do you believe now?" *Close cousin: Obsidian Contradiction Finder (batch, not while writing).* |
+| Spaced-repetition review, "on this day", AI weekly recap… | **Questions addressed to a future date.** "Did this plan work?" comes back in 3 months and waits for an answer. *Exists as standalone apps (FutureMe); new inside a notes app.* |
+
+**"Our test suite takes 25 minutes and developers stopped running it locally."**
+
+| Claude usually says | bein returned |
+|---|---|
+| Test impact analysis | **The team covers the suite together.** Every push runs a different random signed slice locally; across the team, the whole suite is covered every few hours. *No prior art found.* |
+| Parallel shards by runtime | **A thermostat for suite time.** Over the target time, slow tests that rarely fail move to nightly automatically, and come back if they start catching bugs. *Close cousin: building blocks exist (Trunk, Shopify), no closed loop.* |
+| Pre-push smoke tests, caching, quarantine flaky tests… | **CI runs only what you didn't.** CI skips tests you already passed locally on the same tree. *Already exists (prooft): bein says so instead of claiming it.* |
+
+Measured distance from Claude's usual answers: 3.3 → 5.0 in both runs (higher = further). Full lists, judge scores and data: [examples/notes-app.md](examples/notes-app.md) and [examples/slow-tests.md](examples/slow-tests.md).
+
 ## How it works
 
 ```
@@ -125,7 +147,6 @@ bein fits any problem where **the hard part is coming up with something better t
 
 ## Limits, honestly
 
-- **Tested on one problem so far** (improving bein itself, run twice), plus built-in self-tests. Other topics are untested.
 - **Packs exist for general ideas, software and design.** Other fields (machine learning research, science, finance) run on the general pack and need their own feasibility rubric and far-field building blocks to be precise.
 - **Most "far" combinations don't fit together.** In the second self-run, 23 of 60 candidates were coherent (up from 12 of 58 in the first). bein starts with a big pool so the judge can find the few that work.
 - **Jev is only used for "is this already known?".** As a coherence judge it failed (rank correlation 0.09 with Claude judges), so bein doesn't use it for that.
