@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bein",
+  "description": "Ideas your AI would not normally propose, checked for sense, feasibility and prior art.",
+  "owner": {
+    "name": "Tapan Patro",
+    "url": "https://github.com/tapankumarpatro"
+  },
+  "plugins": [
+    {
+      "name": "bein",
+      "description": "Be innovative: non-obvious but sound ideas for products, code and design, measured against the model's own default answers.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

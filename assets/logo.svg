@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>bein: one idea off the usual path</title>
+  <rect width="512" height="512" rx="112" fill="#101216"/>
+  <circle cx="202" cy="334" r="9" fill="#5b6270"/>
+  <circle cx="172" cy="328" r="9" fill="#5b6270"/>
+  <circle cx="251" cy="329" r="9" fill="#5b6270"/>
+  <circle cx="269" cy="277" r="9" fill="#5b6270"/>
+  <circle cx="204" cy="275" r="9" fill="#5b6270"/>
+  <circle cx="155" cy="301" r="9" fill="#5b6270"/>
+  <circle cx="219" cy="380" r="9" fill="#5b6270"/>
+  <circle cx="238" cy="251" r="9" fill="#5b6270"/>
+  <circle cx="174" cy="365" r="9" fill="#5b6270"/>
+  <circle cx="191" cy="241" r="9" fill="#5b6270"/>
+  <circle cx="219" cy="295" r="9" fill="#5b6270"/>
+  <circle cx="143" cy="272" r="9" fill="#5b6270"/>
+  <circle cx="226" cy="345" r="9" fill="#5b6270"/>
+  <circle cx="169" cy="281" r="9" fill="#5b6270"/>
+  <circle cx="128" cy="349" r="9" fill="#5b6270"/>
+  <circle cx="257" cy="304" r="9" fill="#5b6270"/>
+  <circle cx="285" cy="297" r="9" fill="#5b6270"/>
+  <circle cx="191" cy="296" r="9" fill="#5b6270"/>
+  <path d="M262 258 Q330 220 360 168" fill="none" stroke="#ffb547" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <circle cx="378" cy="140" r="48" fill="none" stroke="#ffb547" stroke-opacity="0.35" stroke-width="4"/>
+  <circle cx="378" cy="140" r="27" fill="#ffb547"/>
+</svg>

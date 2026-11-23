@@ -1,0 +1,13 @@
+{
+  "name": "bein",
+  "version": "1.0.0",
+  "description": "Be innovative. Finds ideas your AI would not normally propose: it measures the model's default answers, searches combinations that avoid them, then checks coherence, feasibility and prior art. Includes packs for software (bein-coding) and design (bein-design).",
+  "author": {
+    "name": "Tapan Patro",
+    "url": "https://github.com/tapankumarpatro"
+  },
+  "homepage": "https://github.com/tapankumarpatro/bein",
+  "repository": "https://github.com/tapankumarpatro/bein",
+  "license": "MIT",
+  "keywords": ["innovation", "ideation", "brainstorming", "creativity", "novelty", "agent-skills", "claude-code"]
+}
