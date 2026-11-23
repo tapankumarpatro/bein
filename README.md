@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/stars/tapankumarpatro/bein?style=flat-square&color=111111&label=stars" alt="GitHub stars">
   <img src="https://img.shields.io/badge/Claude%20Code-plugin-111111?style=flat-square" alt="Claude Code plugin">
   <img src="https://img.shields.io/badge/Agent%20Skills-3%20skills-111111?style=flat-square" alt="3 agent skills">
   <img src="https://img.shields.io/badge/python-stdlib%20only-111111?style=flat-square" alt="Python stdlib only">
@@ -147,6 +148,15 @@ skills/bein-design/      design pack: slots, far atoms, feasibility rubric
 Your own data (discard list, ledger, `.env`) lives in `~/.bein/` (change it with `BEIN_HOME`), so updating the plugin never wipes it.
 
 Self-tests: `python skills/bein/scripts/score.py selftest` and `python skills/bein/scripts/ledger.py selftest`.
+
+## Star history
+
+<a href="https://star-history.com/#tapankumarpatro/bein&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=tapankumarpatro/bein&type=Date&theme=dark">
+    <img src="https://api.star-history.com/svg?repos=tapankumarpatro/bein&type=Date" alt="Star history chart for bein" width="600">
+  </picture>
+</a>
 
 ## License
 
